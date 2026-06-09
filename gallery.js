@@ -12,7 +12,7 @@ function upDate(previewPic){
    const element = document.getElementById("image");
    
    element.style.backgroundImage = "url('" + previewPic.src + "')";
-   element.textContent = previewPic.alt;
+   element.innerHTML = previewPic.alt;
 
 	}
 
@@ -28,6 +28,25 @@ function upDate(previewPic){
    const element = document.getElementById("image");
 
    element.style.backgroundImage = "url('')";
-   element.textContent = "Hover over an image below to display here.";
+   element.innerHTML = "Hover over an image below to display here.";
 		
 	}
+
+function toColor(previewPic) {
+   const element = document.getElementById("image");
+   element.style.color = "red";
+}
+
+function toNormal(previewPic) {
+   const element = document.getElementById("image");
+   element.style.color = "white";
+}
+
+function setImages() {
+   my_images = document.querySelectorAll(".preview");
+
+   for (var i=0; i<my_images.length; i++) {
+      /*console.log(my_images[i].alt)*/
+      my_images[i].setAttribute("tabindex", "0")
+   }
+}
