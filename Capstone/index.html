@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first web page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <a href="#main_content" class="offpage">Skip to main content</a>
+    <div id="container">
+    <header>
+            <h1>The future of finance</h1>
+    </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="https://www.ft.com">Articles</a></li>
+                <li><a href="date.html">Book</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <main id="main_content">
+                <article>
+                    <h3>Everybody talks about it ...</h3>
+                    <p>What is the future of Financial Markets ..?</p>
+                    <img src="FM.jpg" alt="Financial newspaper">
+                </article>
+                <article>
+                    <h3>Financial Markets under pressure</h3>
+                    <p>Artificial Intelligence is shaking the software industry.</p>
+                    <img src="SM.jpg" alt="Markets decline">
+                </article>
+                <article>
+                    <h3>It is all about management</h3>
+                    <p>Savings has never been so important</p>
+                    <img src="Savings.jpg" alt="Important to save">
+                </article>
+        </main>
+        <div id="content">
+            <button onclick="addContent()">Add content</button>
+        </div>
+        <footer>
+            Copyright by Jean Wilmet
+        </footer>
+        <script>
+            var name = prompt("Enter your name: ");
+            alert("Welcome " + name + "!");
+        </script>
+        </div>    
+</body>
+</html>
