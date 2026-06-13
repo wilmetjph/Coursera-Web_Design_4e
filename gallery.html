@@ -1,30 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Photo Gallery</title>
-	<link rel="stylesheet" href="gallery.css">
-	<script src = "gallery.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My third web page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body onload="setImages()">
-
-	<input type="text" onfocus="toColor(this)" onblur="toNormal(this)">
-	
-	<div id = "image">
-		Hover over an image below to display here.
-	</div>
-	
-	<img class = "preview" alt = "What a year!" src = "2026.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()" >
-	
-	<img class = "preview" alt = "Let's dream" src = "dream.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" src = "open.jpg" alt = "Always open!" onmouseover = "upDate(this)" onmouseout = "unDo()">
-
-	<img class = "preview" src = "opening.jpg" alt = "This is the day" onmouseover = "upDate(this)" onmouseout = "unDo()">
-
-	<img class = "preview" src = "booster.jpg" alt = "So good" onmouseover = "upDate(this)" onmouseout = "unDo()">
-
-	<img class = "preview" src = "paysage.jpg" alt = "So beautiful" onmouseover = "upDate(this)" onmouseout = "unDo()">
-
+<body>
+    <a href="#main_content">Skip to main content</a>
+    <header>
+            <h1>Financial Markets'evolution</h1>
+    </header>
+    <main id="main_content">
+        <section>
+            <img src="numbers.jpeg">
+            <img src="evolution.jpeg">
+            <img src="trade.png">
+            <img src="stock.jpeg">
+            <img src="Apps.jpeg">
+        </section>
+    </main>
+    <footer>Copyright Jean Wilmet</footer>
 </body>
-</html>
